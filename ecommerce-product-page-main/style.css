@@ -2,7 +2,48 @@
   font-size: 11px;
   text-align: center;
 }
+body{
+  margin-left:15%;
+  margin-right:15%;
+  margin-top:20px;
+}
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+header{
+  display:block;
+  margin-bottom:20px;
+}
+.menu-items{
+  display:inline-flex;
+   
+  max-width:30%;
+  align-items:center;
+  justify-content:space-between;
+  list-style:none;
+
+}
+li{
+  padding-right:10px;
+  cursor:pointer;
+}
+.right-side{
+  display:inline-block;
+   cursor:pointer;
+   position:absolute;
+   left:77vw;
+   
+  }
+  .cart-logo{
+    margin-bottom:15%;
+    
+  }
+.right-side > img:last-of-type{
+  padding-left:30px;
+}
+li:hover{
+  border-bottom:2px solid orange;
+   
 }
