@@ -46,5 +46,100 @@ li {
 .right-side > img:last-of-type {
   padding-left: 30px;
 }
-.profile-photo:hover {
+.body {
+  display: flex;
+}
+.image {
+  border-radius: 15px;
+  cursor: pointer;
+}
+#image-main {
+  padding-right: 8px;
+  padding-top: 4px;
+}
+.images {
+  width: 80%;
+  max-width: 60%;
+  padding-right: 6%;
+  padding-top: 7%;
+}
+.text {
+  max-width: 100%;
+  width: 100%;
+  min-width: 100%;
+  padding-top: 15%;
+}
+.title {
+  color: orange;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+.main-text {
+  padding: 0px;
+  margin: 0px;
+}
+.paragraph {
+  color: grey;
+  max-width: 65%;
+}
+.price {
+  font-weight: 700;
+  font-size: 20px;
+  display: inline;
+  padding-right: 10px;
+}
+.sale {
+  background-color: rgb(252, 227, 182);
+  color: orange;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  max-width: 30px;
+  display: inline;
+}
+.old-price {
+  color: rgb(230, 230, 230);
+  font-size: 13px;
+  padding: 0px;
+  margin: 8px;
+  text-decoration: line-through;
+  font-weight: 500;
+}
+.storage {
+  display: inline-block;
+  background-color: rgb(245, 245, 245);
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.plus,
+.minus {
+  cursor: pointer;
+  padding: 0px 20px;
+}
+.changeable-text {
+  display: inline;
+  font-size: 20px;
+  font-weight: 500;
+}
+.minus {
+  padding-bottom: 3px;
+}
+.add-to-card {
+  display: inline;
+  background: orange;
+  color: white;
+  padding: 10px 150px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 25px;
+}
+.card-button {
+  width: 20px;
+}
+.text-add-to-cart {
+  display: inline;
+  font-weight: 600;
+  font-size: 14px;
 }

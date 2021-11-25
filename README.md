@@ -1,2 +1,3 @@
 # E-commerce
-Just a challenge from Front-end Mentor website. 
+
+Just a practising site from Front-end Mentor.
