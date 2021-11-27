@@ -1,7 +1,4 @@
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
+
 body {
   font-family: "Outfit", sans-serif;
   font-family: "Roboto", sans-serif;
@@ -51,6 +48,8 @@ li {
 }
 .image {
   border-radius: 15px;
+  width:100px;
+  height:100px;
   cursor: pointer;
 }
 #image-main {
@@ -142,4 +141,41 @@ li {
   display: inline;
   font-weight: 600;
   font-size: 14px;
+}
+.image-active{
+  width:450px;
+  height:500px;
+  border-radius: 15px;
+  cursor: pointer;
+  padding-right: 8px;
+
+}
+.cart{
+  position:absolute;
+  width:100%;
+  box-shadow: 5px 5px 10px 5px rgb(185, 185, 185);
+  border-radius:10px;
+  max-width:400px !important;
+  height:100%;
+  max-height: 200px;
+  background-color: rgb(255, 255, 255);
+  margin-top:0%;
+  margin-left:50%;
+  
+}
+.main-cart-text {
+  padding:0px 20px ;
+}
+.hr{
+  max-width:90%;
+  opacity:0.1;
+ 
+
+}
+
+.cart-text{
+  text-align:center;
+  padding-top:30px;
+  color:grey;
+  display:none;
 }
