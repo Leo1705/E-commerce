@@ -1,13 +1,18 @@
+* {
+  font-family:"Kumbh Sans", sans-serif;
 
-body {
-  font-family: "Outfit", sans-serif;
-  font-family: "Roboto", sans-serif;
 }
+
+
 body {
   margin-left: 15%;
   margin-right: 15%;
   margin-top: 20px;
+ overflow-x: hidden;
+ scroll-behavior: smooth;
 }
+
+
 
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -25,9 +30,11 @@ header {
   justify-content: space-between;
   list-style: none;
   padding-bottom: 5px;
+  
 }
 li {
   padding-right: 10px;
+  
   cursor: pointer;
 }
 
@@ -35,10 +42,12 @@ li {
   display: inline-block;
   cursor: pointer;
   position: absolute;
-  left: 77vw;
+  left: 75vw;
 }
 .cart-logo {
   margin-bottom: 15%;
+  padding-right:25px;
+
 }
 .right-side > img:last-of-type {
   padding-left: 30px;
@@ -48,8 +57,8 @@ li {
 }
 .image {
   border-radius: 15px;
-  width:100px;
-  height:100px;
+  width: 100px;
+  height: 100px;
   cursor: pointer;
 }
 #image-main {
@@ -80,7 +89,7 @@ li {
 }
 .paragraph {
   color: grey;
-  max-width: 65%;
+  max-width: 50%;
 }
 .price {
   font-weight: 700;
@@ -142,95 +151,154 @@ li {
   font-weight: 600;
   font-size: 14px;
 }
-.image-active{
-  width:450px;
-  height:500px;
+.image-active {
+  width: 450px;
+  height: 500px;
   border-radius: 15px;
   cursor: pointer;
   padding-right: 8px;
-
 }
-.cart{
-  position:absolute;
-  width:100%;
+.cart {
+  position: absolute;
+  width: 100%;
   box-shadow: 5px 5px 10px 5px rgb(185, 185, 185);
-  border-radius:10px;
-  max-width:400px !important;
-  height:100%;
+  border-radius: 10px;
+  max-width: 400px !important;
+  height: 100%;
   max-height: 200px;
   background-color: rgb(255, 255, 255);
-  margin-top:0%;
-  margin-left:50%;
-  
+  margin-top: 0%;
+  margin-left: 50%;
+  display:none;
 }
 .main-cart-text {
-  padding:0px 20px ;
+  padding: 0px 20px;
 }
-.hr{
-  max-width:90%;
-  opacity:0.1;
+.hr {
+  max-width: 90%;
+  opacity: 0.1;
+}
+
+.cart-text {
+  text-align: center;
+  padding-top: 30px;
+  color: grey;
+  
+  
+}
+.cart-item {
+display: none;
+}
+
+.cart-image {
+  padding: 10px;
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-left: 20px;
+}
+.main-text {
+  max-width: 100%;
+  width: 100%;
+  font-size: 13px;
+  color: grey;
+  margin-top: 10px;
+  display: block;
+}
+.old-price-cart {
+  font-size: 12px;
+  color: grey;
+  position: absolute;
+  left: 100px;
+  top: 95px;
+}
+.icon-delete-cart {
+  position: absolute;
+  left: 85%;
+  top: 50%;
+  cursor: pointer;
+  
+}
+.check-cout-cart {
+  padding: 10px 110px;
+  background-color: orange;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+
+  margin-left: 50px;
+  margin-top: 8px;
+  cursor: pointer;
+  display:none;
+}
+.menu1:hover {
+  border-bottom: 3px solid orange;
+}
+.storage-cart{
+  display: inline-block;
+  font-size: 12px;
+  color: grey;
+  position: absolute;
+  left: 160px;
+  top: 95px;
+
+}
+.final-price {
+  font-size: 12px;
+  color: grey;
+  position: absolute;
+  left: 180px;
+  top: 95px;
+
+}
+.profile-photo-2{
+  display:inline-flex;
+  
+}
+.profile-photo-2:hover{
+  border:2px solid orange !important;
+  border-radius:50%;
+}
+
+
+ul li:hover, 
+ul li:focus {
+  border-bottom:2px solid orange;
+
+
+}
+.header{
+  border-bottom: 1px solid grey;
+  padding-bottom:10px;
+  
+ width:100%;
+ max-width:100%;
  
 
 }
-
-.cart-text{
-  text-align:center;
-  padding-top:30px;
-  color:grey;
-  display:none;
-}
-.cart-item{
-display:flex;  
-  
-}
-
-.cart-image{
-  padding:10px;
-  padding-top:10px;
-  padding-right:30px;
-  padding-left:20px;
-
-}
-.main-text{
-  max-width:100%;
-  width:100%;
-  font-size:13px;
-  color:grey;
-  margin-top:10px;
-  display:block;
-}
-.old-price-cart{
-  font-size:12px;
-  color:grey;
-position:absolute;
-left:100px;
-top:95px;
-
-  
-  
-
-}
-.icon-delete-cart{
-  position:absolute;
-  left:85%;
-  top:50%;
-
-}
-.check-cout-cart{
-  padding:10px 110px;
+.notification{
+  width:15px;
+  height:15px;
+  border-radius:50%;
   background-color: orange;
-  color:white;
-  font-size:16px;
-  font-weight:600;
-  border-radius:5px;
+  display:inline-flex;
+  position:absolute;
+  left:35%;
+  top:10%;
+  display:none;
+  padding:0px 0px 0px 0px; 
+font-size:15px;
   
-  margin-left:50px;
-  margin-top:8px;
-  cursor:pointer;
-
-}
-.menu1:hover{
-  border-bottom:3px solid orange;
+  color:black;
   
 }
-
+.image{
+  padding-right:10px;
+  padding-top:5px;
+}
+.image:hover{
+  opacity:0.5;
+}
+.add-to-card:hover{
+  opacity:0.5;
+}

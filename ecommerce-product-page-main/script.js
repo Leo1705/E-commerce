@@ -16,10 +16,25 @@ image3.addEventListener('click', function(){
 image4.addEventListener('click', function(){
     image_active.src = "images/image-product-4.jpg";
 })
+image_active.addEventListener('click', function(){
+    
+})
 
  var minus = document.getElementById('minus');
     var text = document.getElementById('text-change');
+    //!?od tuja
+    var add_to_card  = document.getElementById('add-to-card');
+    var text_storage = document.getElementById('storage-cart');
+    var text_price = document.getElementById('final-price');
+    //!?do tuja
+    var delete_icon = document.getElementById('delete-icon');
+    var cart_item = document.getElementById('cart-item');
+    var btn_check = document.getElementById('btn-check');
+    var cart_text = document.getElementById('cart-text');
+    var old_text = document.getElementById('old-price');
+    var notification = document.getElementById('notification');
     var count = text.textContent;
+
     
 var plus  = document.getElementById('plus');
 minus.addEventListener('click', function(){
@@ -44,6 +59,45 @@ plus.addEventListener('click', function(){
 var cart = document.querySelector('.cart-logo');
 var cart2  = document.querySelector('.cart');
 cart.addEventListener('click', function(){
+    
+    
     cart2.classList.toggle('cart');
-    cart2.classList.toggle('cart-item');
+    if(cart2.classList.contains('cart')){
+        cart2.style.display  = "block";
+        delete_icon.style.display = "block";
+        text_price.style.display = "inline-block";
+         text_storage.style.display  = "inline-block";       
+         old_text.style.display = "inline-block";
+
+    }
+    else{
+        delete_icon.style.display  ="none";
+        text_storage.style.display = "none";
+        text_price.style.display = "none";
+    old_text.style.display = "none";
+    }
+    
+})
+add_to_card.addEventListener('click', function(e){
+    if(text.textContent == "0"){
+        alert("You cannot purchase nothing! Please select.");
+    }
+    else{
+text_storage.textContent = text.textContent;
+text_price.textContent =  "$" + text.textContent * 125;
+cart_item.style.display = "flex";
+btn_check.style.display = "block";
+cart_text.style.display = "none";
+notification.textContent = text.textContent;
+notification.style.display = "inline-flex";
+    }
+
+})
+delete_icon.addEventListener('click', function(e){
+cart_item.style.display = "none";
+btn_check.style.display = "none";
+cart_text.style.display = "block";
+
+    notification.style.display = "none";
+
 })

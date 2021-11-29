@@ -10,6 +10,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   <title> E-commerce product page</title>
 
 
@@ -18,10 +21,13 @@
 
 <body>
   
-<header> 
+<header class="header"> 
   <img src="images/logo.svg" alt="logo for the company" class="logo-main"/>
 <ul class="menu-items">
+  <div class="menu-items-div">
+    
   <li class="menu1">Collection</li>
+</div>
   <li class="menu2">Men</li>
   <li class="menu3">Women</li>
   <li class="menu4">About</li>
@@ -30,9 +36,14 @@
 
 <div class="right-side">
 <img src="images/icon-cart.svg"alt="cart-logo"  class="cart-logo"/>
+<div class="profile-photo-2">
+  <div class="notification" id="notification"></div>
 <img src="images/image-avatar.png" alt="profile-photo" width="50px" height="50px" class="profile-photo"/>
 </div>
-<hr />
+</div>
+<div class="hr-test">
+
+</div>
 </header>
 <div class="body">
 <div class="images">
@@ -60,29 +71,29 @@
   <p class="changeable-text" id="text-change">0</p>
  <img src="images/icon-plus.svg" class="plus" id="plus"/></button>
 </div>
-<div class="add-to-card">
+<div class="add-to-card" id="add-to-card">
   <img src="images/icon-cart.svg" class="card-button" />
   <p class="text-add-to-cart">Add to cart</p>
 </div>
 </div>
-<div class="cart" id="cart">
+<div   class="cart" id="cart">
   <h3 class="main-cart-text">Cart</h3>
   <div id="hr">
   <hr class="hr"/>
-  <div class="cart-item">
-  <p class="cart-text">Your cart is empty.</p>
+  <p class="cart-text" id="cart-text">Your cart is empty.</p>
+</div>
+  <div class="cart-item" id="cart-item">
   <img src="images/image-product-1-thumbnail.jpg" class="cart-image" width="50px" height="50px" />
   <p class="main-text">Fall Limited Edition Sneakers</p>
   
-  <p class="old-price-cart">$125.00 x</p> 
-    <p class="storage-cart"></p><p class="final-price"></p>
-    <img src="images/icon-delete.svg" class="icon-delete-cart" width="15px" height="15px " />
+  <p class="old-price-cart" id="old-price">$125.00 x</p> 
+    <p class="storage-cart" id="storage-cart"></p><p class="final-price" id="final-price"></p>
+    <img src="images/icon-delete.svg" class="icon-delete-cart" id="delete-icon" width="15px" height="15px " />
   </div>
-  <button class="check-cout-cart">Check out</button>
+  <button class="check-cout-cart" id="btn-check">Check out</button>
+  </div>
   
   
-</div>
-</div>
   
 
 
