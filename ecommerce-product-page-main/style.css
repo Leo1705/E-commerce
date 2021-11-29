@@ -33,7 +33,7 @@ header {
   
 }
 li {
-  padding-right: 10px;
+  padding-right: 20px;
   
   cursor: pointer;
 }
@@ -78,18 +78,23 @@ li {
   padding-top: 15%;
 }
 .title {
-  color: orange;
-  font-weight: 500;
+  color:#ff7d1a;
+  font-weight: 700;
   font-size: 12px;
   letter-spacing: 2px;
 }
-.main-text {
+.main-text12 {
   padding: 0px;
   margin: 0px;
+  font-size:45px !important;
+  color:black !important;
+  width:100% !important;
+  max-width:50% !important;
+
 }
 .paragraph {
   color: grey;
-  max-width: 50%;
+  max-width: 40%;
 }
 .price {
   font-weight: 700;
@@ -99,7 +104,7 @@ li {
 }
 .sale {
   background-color: rgb(252, 227, 182);
-  color: orange;
+  color: #ff7d1a;
   border-radius: 5px;
   font-size: 15px;
   font-weight: 500;
@@ -107,12 +112,12 @@ li {
   display: inline;
 }
 .old-price {
-  color: rgb(230, 230, 230);
+  color: rgb(214, 212, 212);
   font-size: 13px;
   padding: 0px;
   margin: 8px;
   text-decoration: line-through;
-  font-weight: 500;
+  font-weight: 700;
 }
 .storage {
   display: inline-block;
@@ -136,9 +141,9 @@ li {
 }
 .add-to-card {
   display: inline;
-  background: orange;
+  background: #ff7d1a;
   color: white;
-  padding: 10px 150px;
+  padding: 15px 100px;
   border-radius: 5px;
   cursor: pointer;
   margin-left: 25px;
@@ -153,7 +158,7 @@ li {
 }
 .image-active {
   width: 450px;
-  height: 500px;
+  height: 450px;
   border-radius: 15px;
   cursor: pointer;
   padding-right: 8px;
@@ -220,19 +225,21 @@ display: none;
 }
 .check-cout-cart {
   padding: 10px 110px;
-  background-color: orange;
+  background-color: #ff7d1a;
   color: white;
   font-size: 16px;
   font-weight: 600;
   border-radius: 5px;
-
-  margin-left: 50px;
+ width:100%;
+ max-width:30%;
+ text-align:center;
+  margin-left: 35px;
   margin-top: 8px;
   cursor: pointer;
   display:none;
 }
 .menu1:hover {
-  border-bottom: 3px solid orange;
+ 
 }
 .storage-cart{
   display: inline-block;
@@ -256,14 +263,14 @@ display: none;
   
 }
 .profile-photo-2:hover{
-  border:2px solid orange !important;
+  border:2px solid #ff7d1a !important;
   border-radius:50%;
 }
 
 
 ul li:hover, 
 ul li:focus {
-  border-bottom:2px solid orange;
+  
 
 
 }
@@ -279,17 +286,20 @@ ul li:focus {
 .notification{
   width:15px;
   height:15px;
+  max-width:15px;
+  max-height:15px;
+  padding-left:5px;
   border-radius:50%;
-  background-color: orange;
+  background-color: #ff7d1a;
   display:inline-flex;
   position:absolute;
   left:35%;
   top:10%;
   display:none;
-  padding:0px 0px 0px 0px; 
+  
 font-size:15px;
   
-  color:black;
+  color:rgb(255, 255, 255);
   
 }
 .image{
@@ -301,4 +311,28 @@ font-size:15px;
 }
 .add-to-card:hover{
   opacity:0.5;
+
+}
+ul li{
+  padding:10px !important;
+  position:relative !important;
+}
+ul li::after{
+  content: '' !important;
+  height:5px !important;
+  width:100px !important;
+  background:orange !important ;
+  border-radius:10px !important;
+  position:absolute !important;
+  bottom:-5px !important;
+  right:0% !important;
+  display:none;
+  transition:.3s !important;
+  
+}
+ul li:hover::after{
+  display:block;
+width:100% !important;
+left:0% !important;
+top:170%;
 }

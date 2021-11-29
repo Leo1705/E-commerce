@@ -1,4 +1,5 @@
 var image_active = document.getElementById('image-down');
+var images = document.getElementById('images');
 var image1 = document.getElementById('image-1');
 var image2 = document.getElementById('image-2');
 var image3 = document.getElementById('image-3');
@@ -17,7 +18,10 @@ image4.addEventListener('click', function(){
     image_active.src = "images/image-product-4.jpg";
 })
 image_active.addEventListener('click', function(){
-    
+images.setAttribute( 'id', 'images2');
+
+
+
 })
 
  var minus = document.getElementById('minus');
