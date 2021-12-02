@@ -79,6 +79,7 @@ cart.addEventListener('click', function(){
         text_storage.style.display = "none";
         text_price.style.display = "none";
     old_text.style.display = "none";
+    cart2.style.display = "none";
     }
     
 })
@@ -104,4 +105,15 @@ cart_text.style.display = "block";
 
     notification.style.display = "none";
 
+})
+const ToggleButton = document.getElementsByClassName('toggle-button')[0];
+const navbarLinks = document.getElementsByClassName('menu')[0];
+const navbarLinks2 = document.getElementsByClassName('menu')[1];
+const navbarLinks3 = document.getElementsByClassName('menu')[2];
+const navbarLinks4 = document.getElementsByClassName('menu')[3];
+ToggleButton.addEventListener('click', function(){
+    navbarLinks.classList.toggle('active');
+    navbarLinks2.classList.toggle('active');
+    navbarLinks3.classList.toggle('active');
+    navbarLinks4.classList.toggle('active');
 })

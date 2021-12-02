@@ -1,18 +1,14 @@
 * {
-  font-family:"Kumbh Sans", sans-serif;
-
+  font-family: "Kumbh Sans", sans-serif;
 }
-
 
 body {
   margin-left: 15%;
   margin-right: 15%;
   margin-top: 20px;
- overflow-x: hidden;
- scroll-behavior: smooth;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
-
-
 
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -30,11 +26,10 @@ header {
   justify-content: space-between;
   list-style: none;
   padding-bottom: 5px;
-  
 }
 li {
   padding-right: 20px;
-  
+
   cursor: pointer;
 }
 
@@ -46,8 +41,7 @@ li {
 }
 .cart-logo {
   margin-bottom: 15%;
-  padding-right:25px;
-
+  padding-right: 25px;
 }
 .right-side > img:last-of-type {
   padding-left: 30px;
@@ -78,7 +72,7 @@ li {
   padding-top: 15%;
 }
 .title {
-  color:#ff7d1a;
+  color: #ff7d1a;
   font-weight: 700;
   font-size: 12px;
   letter-spacing: 2px;
@@ -86,11 +80,10 @@ li {
 .main-text12 {
   padding: 0px;
   margin: 0px;
-  font-size:45px !important;
-  color:black !important;
-  width:100% !important;
-  max-width:50% !important;
-
+  font-size: 45px !important;
+  color: black !important;
+  width: 100% !important;
+  max-width: 50% !important;
 }
 .paragraph {
   color: grey;
@@ -174,7 +167,7 @@ li {
   background-color: rgb(255, 255, 255);
   margin-top: 0%;
   margin-left: 50%;
-  display:none;
+  display: none;
 }
 .main-cart-text {
   padding: 0px 20px;
@@ -188,11 +181,9 @@ li {
   text-align: center;
   padding-top: 30px;
   color: grey;
-  
-  
 }
 .cart-item {
-display: none;
+  display: none;
 }
 
 .cart-image {
@@ -221,7 +212,6 @@ display: none;
   left: 85%;
   top: 50%;
   cursor: pointer;
-  
 }
 .check-cout-cart {
   padding: 10px 110px;
@@ -230,25 +220,23 @@ display: none;
   font-size: 16px;
   font-weight: 600;
   border-radius: 5px;
- width:100%;
- max-width:30%;
- text-align:center;
+  width: 100%;
+  max-width: 30%;
+  text-align: center;
   margin-left: 35px;
   margin-top: 8px;
   cursor: pointer;
-  display:none;
+  display: none;
 }
 .menu1:hover {
- 
 }
-.storage-cart{
+.storage-cart {
   display: inline-block;
   font-size: 12px;
   color: grey;
   position: absolute;
   left: 160px;
   top: 95px;
-
 }
 .final-price {
   font-size: 12px;
@@ -256,107 +244,175 @@ display: none;
   position: absolute;
   left: 180px;
   top: 95px;
-
 }
-.profile-photo-2{
-  display:inline-flex;
-  
+.profile-photo-2 {
+  display: inline-flex;
 }
-.profile-photo-2:hover{
-  border:2px solid #ff7d1a !important;
-  border-radius:50%;
+.profile-photo-2:hover {
+  border: 2px solid #ff7d1a !important;
+  border-radius: 50%;
 }
 
-
-ul li:hover, 
+ul li:hover,
 ul li:focus {
-  
-
-
 }
-.header{
+.header {
   border-bottom: 1px solid grey;
-  padding-bottom:10px;
-  
- width:100%;
- max-width:100%;
- 
+  padding-bottom: 10px;
 
+  width: 100%;
+  max-width: 100%;
 }
-.notification{
-  width:15px;
-  height:15px;
-  max-width:15px;
-  max-height:15px;
-  padding-left:5px;
-  border-radius:50%;
+.notification {
+  width: 15px;
+  height: 15px;
+  max-width: 15px;
+  max-height: 15px;
+  padding-left: 5px;
+  border-radius: 50%;
   background-color: #ff7d1a;
-  display:inline-flex;
-  position:absolute;
-  left:35%;
-  top:10%;
-  display:none;
-  
-font-size:15px;
-  
-  color:rgb(255, 255, 255);
-  
-}
-.image{
-  padding-right:10px;
-  padding-top:5px;
-}
-.image:hover{
-  opacity:0.5;
-}
-.add-to-card:hover{
-  opacity:0.5;
+  display: inline-flex;
+  position: absolute;
+  left: 35%;
+  top: 10%;
+  display: none;
 
+  font-size: 15px;
+
+  color: rgb(255, 255, 255);
 }
-ul li{
-  padding:10px !important;
-  position:relative !important;
+.image {
+  padding-right: 10px;
+  padding-top: 5px;
 }
-ul li::after{
-  content: '' !important;
-  height:5px !important;
-  width:100px !important;
-  background:orange !important ;
-  border-radius:10px !important;
-  position:absolute !important;
-  bottom:-5px !important;
-  right:0% !important;
-  display:none;
-  transition:.3s !important;
-  
+.image:hover {
+  opacity: 0.5;
 }
-ul li:hover::after{
-  display:block;
-width:100% !important;
-left:0% !important;
-top:170%;
+.add-to-card:hover {
+  opacity: 0.5;
 }
-@media screen and (max-width:1200px){
+ul li {
+  padding: 10px !important;
+  position: relative !important;
+}
+ul li::after {
+  content: "" !important;
+  height: 5px !important;
+  width: 100px !important;
+  background: orange !important ;
+  border-radius: 10px !important;
+  position: absolute !important;
+  bottom: -5px !important;
+  right: 0% !important;
+  display: none;
+  transition: 0.3s !important;
+}
+ul li:hover::after {
+  display: block;
+  width: 100% !important;
+  left: 0% !important;
+  top: 170%;
+}
+.toggle-button {
+  position: absolute;
+  top: 1.5%;
+  right: 93%;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1200px) {
   body {
-    margin-left:4%;
+    margin-left: 4%;
+    margin-right: 0%;
   }
-  .add-to-card{
-    display:block;
+  .add-to-card {
+    display: block;
+
+    max-width: 15%;
+    margin-left: -0%;
+    margin-top: 2%;
+  }
+}
+@media screen and (max-width: 860px) {
+  .body {
+    display: block;
+    margin-left: 0%;
+    margin-right: 0%;
+    overflow: hidden;
+  }
+  .images {
+    display: block;
+    max-width: 60%;
+  }
+  ul {
+    display: none;
+  }
+  .add-to-card {
+    display: inline-block;
+  }
+  #test-text {
+    max-width: 100%;
+    width: 500000%;
+    font-size: 20px;
+  }
+  .paragraph {
+    max-width: 80%;
+  }
+  .toggle-button {
+    display: flex;
+  }
+  li {
+display:none;
+  }
+  .menu-items{
+    flex-direction: column;
+    margin-right:70%;
+    margin-top:10%;
+    margin-left:0%;
+    padding-left:0%;
     
-    max-width:15%;
-    margin-left:-0%;
-    margin-top:2%;
   }
-}
-@media screen and (max-width:860px){
- .body{
-   display:block;
-   margin-left:1%;
-   }
-.images{
-  display:block;
-}
-  ul{
-    display:none;
+  .logo-main {
+    margin-left: 15%;
+    
+  }
+  .right-side {
+   top:3.2%;
+   left:30vw;
+    
+    display:block;
+   
+    
+    
+
+    }
+
+  .profile-photo {
+    position: relative;
+    bottom: 10px;
+  }
+  .header {
+   padding-bottom:0px;
+  margin-top:7%;
+  margin-bottom:-10px;
+  display: block;
+  max-width:55%;
+  }
+  .cart {
+    bottom: 80%;
+    right: 25%;
+  }
+  .active {
+    display:flex;
   }
 }
